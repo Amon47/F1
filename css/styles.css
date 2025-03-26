@@ -1,0 +1,141 @@
+/* Štýly pre tímy - aktualizované farby podľa F1 2024 */
+.team-mclaren { background-color: #FF8000; color: white; } /* McLaren - oranžová */
+.team-ferrari { background-color: #DC0000; color: white; } /* Ferrari - červená */
+.team-redbull { background-color: #0600EF; color: white; } /* Red Bull - tmavomodrá */
+.team-mercedes { background-color: #00D2BE; color: black; } /* Mercedes - tyrkysová */
+.team-astonmartin { background-color: #006F62; color: white; } /* Aston Martin - zelená */
+.team-alpine { background-color: #0090FF; color: white; } /* Alpine - modrá */
+.team-haas { background-color: #FFFFFF; color: black; border: 1px solid #000; } /* Haas - biela */
+.team-racingbulls { background-color: #2B4562; color: white; } /* Racing Bulls - tmavomodrá */
+.team-williams { background-color: #005AFF; color: white; } /* Williams - modrá */
+.team-sauber { background-color: #9B0000; color: white; } /* Sauber - červená */
+
+/* Hlavné štýly */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #e10600;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.login-section {
+    flex: 1 1 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.center-panel {
+    flex: 2;
+    min-width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.first-place {
+    background-color: gold;
+    font-weight: bold;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #e10600;
+    color: white;
+}
+
+button:hover {
+    background-color: #c10500;
+}
+
+.hidden {
+    display: none;
+}
+
+.admin-section {
+    background-color: #ffebee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.participant-link {
+    color: #e10600;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.participant-link:hover {
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
